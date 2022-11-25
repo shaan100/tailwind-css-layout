@@ -64,20 +64,22 @@
 		 	   	      	   </p>
 		 	   	      </div>
 
-		 	   	      <?php for($x=1;$x<100;$x++):?>
-                      		 
-                      		 <div class="bg-yellow-500 ">
-                      		 	    <p class="p-6">
-                      		 	    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      		 	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      		 	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      		 	    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      		 	    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      		 	    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                      		 	    </p>
-                      		 </div>
+		 	   	       <?php 
+                        $dir = array_diff(scandir(__DIR__), ['.','..']);
 
-		 	   	      <?php endfor;?>
+                        foreach ($dir as $key => $value) {
+                        		$ext = pathinfo($value,PATHINFO_EXTENSION);
+                        		$base = pathinfo($value,PATHINFO_BASENAME);
+                        		$file = pathinfo($value,PATHINFO_FILENAME);
+
+                        		  if($ext == 'php'):
+                                
+                        	   ?>
+                              <a href="<?= $base?>" class="bg-rose-500 rounded text-white font-semibold capitalize p-4"><?= $file?></a>
+                        	   <?php
+                        	 endif;
+                        }
+		 	   	        ?>
 		 	   </div>
 		 </div>
 
