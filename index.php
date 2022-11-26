@@ -72,7 +72,7 @@
                         		$base = pathinfo($value,PATHINFO_BASENAME);
                         		$file = pathinfo($value,PATHINFO_FILENAME);
 
-                        		  if($ext == 'php'):
+                        		  if($ext == 'php' || $ext == 'html'):
                                 
                         	   ?>
                               <a href="<?= $base?>" class="bg-rose-500 rounded text-white font-semibold capitalize p-4"><?= $file?></a>
