@@ -13,7 +13,7 @@
 		 	   <div class="bg-gray-200 h-screen fixed -left-[500px] md:left-0 flex flex-col items-center sidebar transition-all delay-200 duration-200 overflow-y-auto" style="width: 276px;">
 		 	   	        <div class=" mt-24">
 		 	   	        	<div class="flex justify-center mb-16">
-		 	   	        		<div class="bg-gradient-to-tl to-yellow-500 from-rose-500 rounded-full p-1">
+		 	   	        		<div class="bg-gradient-to-tl to-yellow-500 from-rose-500 rounded-full p-1"><!-- https://source.unsplash.com/random -->
 		 	   	        		 <img src="https://source.unsplash.com/random" class="w-24 h-24 rounded-full">
 		 	   	        		</div>
 		 	   	        	</div>
@@ -75,7 +75,7 @@
                         		  if($ext == 'php' || $ext == 'html'):
                                 
                         	   ?>
-                              <a href="<?= $base?>" class="bg-rose-500 rounded text-white font-semibold capitalize p-4"><?= $file?></a>
+                              <a href="<?= $base?>" class="bg-rose-500 rounded text-white font-semibold capitalize p-2 md:p-4"><?= $file?></a>
                         	   <?php
                         	 endif;
                         }
