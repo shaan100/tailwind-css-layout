@@ -10,7 +10,7 @@
 <body>
 		 <div class="grid md:grid-cols-12">
 		<div class="col-span-2">
-		 	   <div class="bg-gray-200 h-screen fixed -left-[500px] md:left-0 flex flex-col items-center sidebar transition-all delay-200 duration-200 overflow-y-auto" style="width: 276px;">
+		 	   <div class="bg-gray-200 px-6 h-screen fixed -left-[500px] md:left-0 flex flex-col items-center sidebar transition-all delay-200 duration-200 overflow-y-auto">
 		 	   	        <div class=" mt-24">
 		 	   	        	<div class="flex justify-center mb-16">
 		 	   	        		<div class="bg-gradient-to-tl to-yellow-500 from-rose-500 rounded-full p-1"><!-- https://source.unsplash.com/random -->
